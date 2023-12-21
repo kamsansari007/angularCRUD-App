@@ -30,18 +30,6 @@
       "id": 1
     },
     {
-      "firstName": " Kamran",
-      "lastName": "Ansari",
-      "email": "kamran@techinventive.com",
-      "dob": "1995-08-22T18:30:00.000Z",
-      "education": "PostGraduate",
-      "gender": "male",
-      "company": "Techinventive",
-      "experience": 4,
-      "package": 4,
-      "id": 2
-    },
-    {
       "firstName": " test",
       "lastName": "test",
       "email": "test@email.com",
@@ -64,6 +52,18 @@
       "experience": 2,
       "package": 3,
       "id": 4
+    },
+    {
+      "firstName": " test",
+      "lastName": "data",
+      "email": "test123@email.com",
+      "dob": "2023-12-19T18:30:00.000Z",
+      "education": "PostGraduate",
+      "gender": "male",
+      "company": "Techinventive",
+      "experience": 3,
+      "package": 4,
+      "id": 5
     }
   ]
 }
