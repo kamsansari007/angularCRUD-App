@@ -7,20 +7,20 @@ import { Observable } from 'rxjs';
 })
 export class EmployeeService {
 
-  constructor(private _http:HttpClient) { }
+  constructor(private _https:HttpClient) { }
 
   addEmployee(data:any): Observable<any> {
-    return this._http.post('https://angular-crud-app-lyart.vercel.app/employees', data)
+    return this._https.post('https://angular-crud-app-lyart.vercel.app/employees', data, {responseType: 'json'})
   }
   updateEmployee(id: number , data:any): Observable<any> {
-    return this._http.put(`https://angular-crud-app-lyart.vercel.app/employees/${id}`, data)
+    return this._https.put(`https://angular-crud-app-lyart.vercel.app/employees/${id}`, data, {responseType: 'json'})
   }
   getEmployeeList(): Observable<any> {
-    return this._http.get('https://angular-crud-app-lyart.vercel.app/employees')
+    return this._https.get('https://angular-crud-app-lyart.vercel.app/employees',{responseType: 'json'})
   }
 
   deleteEmployee(id:number): Observable<any>{
-    return this._http.delete(`https://angular-crud-app-lyart.vercel.app/${id}`);
+    return this._https.delete(`https://angular-crud-app-lyart.vercel.app/${id}`, {responseType: 'json'});
   }
   
 }
